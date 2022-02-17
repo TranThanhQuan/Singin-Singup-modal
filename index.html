@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up Form</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <!-- Button sign in / sign up -->
+    <div class="btn__option">
+        <button class="signin">Sign In</button>
+        <button class="signup">Sign Up</button>
+
+    </div>
+    
+
+
+    <!-- Modal sign in -->
+    <div class="signin-modal hide">
+        <div class="signin-modal-inner">
+            <div class="signin-modal-header">
+                <h3>Sign In</h3>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="signin-modal-body">
+                <div class="input-infor">
+                        <i class="fas fa-user input-infor-name-icon" ></i>
+                        <input type="text" placeholder="Enter your name" class="input-infor-name">
+                        <i class="fas fa-lock input-infor-password-icon"></i>
+                        <input type="password" placeholder="Enter your password" class="input-infor-password">
+                </div>
+
+                <div class="input-remember">
+                    <input type="checkbox">
+                    <p>Remember me</p>
+                </div>
+                <button> Log in</button>
+            </div>
+            <div class="signin-modal-footer">
+                <button>Create an account</button>
+                <!-- <a href="">Create an account</a> -->
+                <p>or login with</p>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-square"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Sign up  -->
+    <div class="signup-modal signup-hide">
+        <div class="signup-modal-inner">
+            <div class="signup-modal-header">
+                <h3>Sign Up</h3>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="signup-modal-body">
+                <div class="signup-input-infor">
+                    <i class="fas fa-user signup-input-infor-name-icon" ></i>
+                    <input type="text" placeholder="Enter your name">
+                
+                    <i class="fas fa-lock signup-input-infor-password-icon"></i>
+                    <input type="password" placeholder="Enter your password">
+                
+                    <i class="fas fa-lock signup-input-infor-email-icon" ></i>
+                    <input type="password" placeholder="Cornfirm your password">
+                
+                    <i class="fas fa-envelope signup-input-infor-email-icon" ></i>
+                    <input type="email" placeholder="Enter your email">
+                
+                </div>
+                
+                <div class="input-remember">
+                    <input type="checkbox">
+                    <p>I agree all statement in </p>
+                    <a href="">Terms of service</a>
+                </div>
+            </div>
+            <div class="signup-modal-footer">
+                <button>Register</button>
+                <button class="change-modal">I am already member</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

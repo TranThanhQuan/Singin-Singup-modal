@@ -1,0 +1,285 @@
+:root{
+    --primary-color:#6eabe4;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    overflow: hidden;
+    background-color:  #1a94ff;
+
+}
+
+.btn__option {
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120px, -10px);
+}
+
+.btn__option button{
+    padding:10px 30px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 700;    
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn__option button:hover{
+    transform: scale(1.2);
+    background-color:var(--primary-color);
+    color: #fff;
+}
+
+
+/* Sign In */
+.signin-modal {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signin-modal-inner {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.signin-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+    margin: 0 12px;
+}
+
+.signin-modal-header h3 {
+    color: var(--primary-color);
+}
+
+.signin-modal-body {
+    margin-left: 12px;
+    font-size: 25px;
+}
+
+.input-infor-password-icon, .input-infor-name-icon {
+    position: relative;
+    top:27px;
+}
+
+.input-infor input{
+    width: 300px;
+    display: block;
+    margin-top: 8px;
+    margin-left: 32px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+.input-remember {
+    display: flex;
+    align-items: center;
+    margin: 16px 16px;
+    font-size: 20px;
+}
+
+
+.input-remember input {
+    margin-left: -8px;
+    margin-right: 12px;    
+}
+
+.signin-modal-body button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    margin: 30px 0 10px 0;
+    color: #fff;
+    cursor: pointer;
+}
+.signin-modal-body button:hover {
+    opacity: 0.8;
+}
+
+.signin-modal-header i {
+    cursor: pointer;
+}
+.signin-modal-footer {
+    display: flex;
+    padding-bottom: 4px;
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+
+.signin-modal-footer button{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    margin-right: 36px;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signin-modal-footer button:hover{
+    color: var(--primary-color);
+
+}
+
+
+.signin-modal-footer i{
+    margin: 0 4px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.signin-modal-footer i:hover{
+    transform: scale(1.2);
+}
+
+.hide {
+    display: none;
+}
+
+/* Sign Up */
+
+
+.signup-modal {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signup-modal-inner {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.signup-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+    margin: 0 12px;
+}
+
+.signup-modal-header h3 {
+    color: var(--primary-color);
+}
+
+.signup-modal-header i {
+    cursor: pointer;
+}
+
+.signup-modal-body {
+    margin-left: 12px;
+    font-size: 25px;
+}
+
+.signup-input-infor-password-icon, .signup-input-infor-name-icon,
+.signup-input-infor-email-icon, .signup-input-infor-cornfirm-password {
+    position: relative;
+    top:27px;
+}
+
+.signup-input-infor input{
+    width: 300px;
+    display: block;
+    margin-top: 8px;
+    margin-left: 32px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+.input-remember {
+    display: flex;
+    align-items: center;
+    margin: 16px 16px;
+    font-size: 20px;
+}
+
+
+.input-remember input {
+    margin-left: -8px;
+    margin-right: 12px;    
+}
+
+
+.input-remember a {
+    color: #000;
+    margin-left: 6px;
+}
+
+
+.signup-modal-footer button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    margin-left: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+.signup-modal-footer button:hover {
+    opacity: 0.8;
+}
+
+
+.signup-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.signup-modal-footer .change-modal{
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-right: 20px;
+
+}
+
+.signup-modal-footer .change-modal:hover{
+    color: var(--primary-color);
+}
+
+.signup-hide{
+    display: none;
+}
